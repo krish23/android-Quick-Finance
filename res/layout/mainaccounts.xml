@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainAccounts" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Main Accounts Menu"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btn_addaccounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="18dp"
+        android:onClick="btnClick_addAccounts"
+        android:text="Add Accounts" />
+
+    <Button
+        android:id="@+id/btn_editaccounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_addaccounts"
+        android:layout_alignBottom="@+id/btn_addaccounts"
+        android:layout_marginLeft="34dp"
+        android:layout_toRightOf="@+id/btn_addaccounts"
+        android:onClick="btnClick_editAccounts"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/btn_deleteaccounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_addaccounts"
+        android:layout_below="@+id/btn_addaccounts"
+        android:text="Button" />
+
+    <ListView
+        android:id="@+id/lst_accounts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_deleteaccounts"
+        android:layout_below="@+id/btn_deleteaccounts"
+        android:layout_marginTop="24dp" >
+    </ListView>
+
+</RelativeLayout>

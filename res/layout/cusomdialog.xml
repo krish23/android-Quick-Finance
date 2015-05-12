@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserSelector" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="26dp"
+        android:text="Welcome to Quantum Finance"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="26dp"
+        android:text="In order to continue the app, you will need to register. Please choose user type for continue..."
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+    <Button
+        android:id="@+id/btn_userOk"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="39dp"
+        android:text="Save" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_userOk"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="27dp"
+        android:text="Enable Auto Sync" />
+
+    <RadioGroup
+        android:id="@+id/radioUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" >
+
+        <RadioButton
+            android:id="@+id/rdo_owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Owner" />
+
+        <RadioButton
+            android:id="@+id/rdo_viewer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Viewer" />
+
+        <RadioButton
+            android:id="@+id/rdo_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Administrator" />
+
+    </RadioGroup>
+
+</RelativeLayout>
